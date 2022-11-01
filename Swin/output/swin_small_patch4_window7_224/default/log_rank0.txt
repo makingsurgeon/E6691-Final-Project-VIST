@@ -1,0 +1,791 @@
+[2022-05-03 01:25:27 swin_small_patch4_window7_224] (main.py 352): INFO Full config saved to output/swin_small_patch4_window7_224/default/config.json
+[2022-05-03 01:25:27 swin_small_patch4_window7_224] (main.py 355): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  CUTMIX: 1.0
+  CUTMIX_MINMAX: null
+  MIXUP: 0.8
+  MIXUP_MODE: batch
+  MIXUP_PROB: 1.0
+  MIXUP_SWITCH_PROB: 0.5
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 128
+  CACHE_MODE: part
+  DATASET: imagenet
+  DATA_PATH: IMGNET_PATH
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  NUM_WORKERS: 8
+  PIN_MEMORY: true
+  ZIP_MODE: false
+EVAL_MODE: true
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.3
+  DROP_RATE: 0.0
+  LABEL_SMOOTHING: 0.1
+  NAME: swin_small_patch4_window7_224
+  NUM_CLASSES: 1000
+  PRETRAINED: ''
+  RESUME: ./cache/swin_small_patch4_window7_224.pth
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 96
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 3
+    - 6
+    - 12
+    - 24
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  SWIN_MLP:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 6
+    - 2
+    EMBED_DIM: 96
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 3
+    - 6
+    - 12
+    - 24
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    WINDOW_SIZE: 7
+  TYPE: swin
+OUTPUT: output/swin_small_patch4_window7_224/default
+PRINT_FREQ: 10
+SAVE_FREQ: 1
+SEED: 0
+TAG: default
+TEST:
+  CROP: true
+  SEQUENTIAL: false
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  AUTO_RESUME: true
+  BASE_LR: 0.000125
+  CLIP_GRAD: 5.0
+  EPOCHS: 300
+  LR_SCHEDULER:
+    DECAY_EPOCHS: 30
+    DECAY_RATE: 0.1
+    NAME: cosine
+  MIN_LR: 1.25e-06
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: false
+  WARMUP_EPOCHS: 20
+  WARMUP_LR: 1.25e-07
+  WEIGHT_DECAY: 0.05
+
+[2022-05-03 01:27:25 swin_small_patch4_window7_224] (main.py 352): INFO Full config saved to output/swin_small_patch4_window7_224/default/config.json
+[2022-05-03 01:27:25 swin_small_patch4_window7_224] (main.py 355): INFO AMP_OPT_LEVEL: O1
+AUG:
+  AUTO_AUGMENT: rand-m9-mstd0.5-inc1
+  COLOR_JITTER: 0.4
+  CUTMIX: 1.0
+  CUTMIX_MINMAX: null
+  MIXUP: 0.8
+  MIXUP_MODE: batch
+  MIXUP_PROB: 1.0
+  MIXUP_SWITCH_PROB: 0.5
+  RECOUNT: 1
+  REMODE: pixel
+  REPROB: 0.25
+BASE:
+- ''
+DATA:
+  BATCH_SIZE: 128
+  CACHE_MODE: part
+  DATASET: imagenet
+  DATA_PATH: /home/ecbm4040/.cache/huggingface/datasets/downloads/extracted/0201c2598c4cf28a3ea355e57a1b281d33183822b6848bd3c1ea3285835cb028/ILSVRC/Data/CLS-LOC
+  IMG_SIZE: 224
+  INTERPOLATION: bicubic
+  NUM_WORKERS: 8
+  PIN_MEMORY: true
+  ZIP_MODE: false
+EVAL_MODE: true
+LOCAL_RANK: 0
+MODEL:
+  DROP_PATH_RATE: 0.3
+  DROP_RATE: 0.0
+  LABEL_SMOOTHING: 0.1
+  NAME: swin_small_patch4_window7_224
+  NUM_CLASSES: 1000
+  PRETRAINED: ''
+  RESUME: ./cache/swin_small_patch4_window7_224.pth
+  SWIN:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 18
+    - 2
+    EMBED_DIM: 96
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 3
+    - 6
+    - 12
+    - 24
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    QKV_BIAS: true
+    QK_SCALE: null
+    WINDOW_SIZE: 7
+  SWIN_MLP:
+    APE: false
+    DEPTHS:
+    - 2
+    - 2
+    - 6
+    - 2
+    EMBED_DIM: 96
+    IN_CHANS: 3
+    MLP_RATIO: 4.0
+    NUM_HEADS:
+    - 3
+    - 6
+    - 12
+    - 24
+    PATCH_NORM: true
+    PATCH_SIZE: 4
+    WINDOW_SIZE: 7
+  TYPE: swin
+OUTPUT: output/swin_small_patch4_window7_224/default
+PRINT_FREQ: 10
+SAVE_FREQ: 1
+SEED: 0
+TAG: default
+TEST:
+  CROP: true
+  SEQUENTIAL: false
+THROUGHPUT_MODE: false
+TRAIN:
+  ACCUMULATION_STEPS: 0
+  AUTO_RESUME: true
+  BASE_LR: 0.000125
+  CLIP_GRAD: 5.0
+  EPOCHS: 300
+  LR_SCHEDULER:
+    DECAY_EPOCHS: 30
+    DECAY_RATE: 0.1
+    NAME: cosine
+  MIN_LR: 1.25e-06
+  OPTIMIZER:
+    BETAS:
+    - 0.9
+    - 0.999
+    EPS: 1.0e-08
+    MOMENTUM: 0.9
+    NAME: adamw
+  START_EPOCH: 0
+  USE_CHECKPOINT: false
+  WARMUP_EPOCHS: 20
+  WARMUP_LR: 1.25e-07
+  WEIGHT_DECAY: 0.05
+
+[2022-05-03 01:27:36 swin_small_patch4_window7_224] (main.py 82): INFO Creating model:swin/swin_small_patch4_window7_224
+[2022-05-03 01:27:39 swin_small_patch4_window7_224] (main.py 85): INFO SwinTransformer(
+  (patch_embed): PatchEmbed(
+    (proj): Conv2d(3, 96, kernel_size=(4, 4), stride=(4, 4))
+    (norm): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+  )
+  (pos_drop): Dropout(p=0.0, inplace=False)
+  (layers): ModuleList(
+    (0): BasicLayer(
+      dim=96, input_resolution=(56, 56), depth=2
+      (blocks): ModuleList(
+        (0): SwinTransformerBlock(
+          dim=96, input_resolution=(56, 56), num_heads=3, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=96, window_size=(7, 7), num_heads=3
+            (qkv): Linear(in_features=96, out_features=288, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=96, out_features=96, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): Identity()
+          (norm2): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=96, out_features=384, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=384, out_features=96, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (1): SwinTransformerBlock(
+          dim=96, input_resolution=(56, 56), num_heads=3, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=96, window_size=(7, 7), num_heads=3
+            (qkv): Linear(in_features=96, out_features=288, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=96, out_features=96, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((96,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=96, out_features=384, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=384, out_features=96, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (downsample): PatchMerging(
+        input_resolution=(56, 56), dim=96
+        (reduction): Linear(in_features=384, out_features=192, bias=False)
+        (norm): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (1): BasicLayer(
+      dim=192, input_resolution=(28, 28), depth=2
+      (blocks): ModuleList(
+        (0): SwinTransformerBlock(
+          dim=192, input_resolution=(28, 28), num_heads=6, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=192, window_size=(7, 7), num_heads=6
+            (qkv): Linear(in_features=192, out_features=576, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=192, out_features=192, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=192, out_features=768, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=768, out_features=192, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (1): SwinTransformerBlock(
+          dim=192, input_resolution=(28, 28), num_heads=6, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=192, window_size=(7, 7), num_heads=6
+            (qkv): Linear(in_features=192, out_features=576, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=192, out_features=192, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((192,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=192, out_features=768, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=768, out_features=192, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (downsample): PatchMerging(
+        input_resolution=(28, 28), dim=192
+        (reduction): Linear(in_features=768, out_features=384, bias=False)
+        (norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (2): BasicLayer(
+      dim=384, input_resolution=(14, 14), depth=18
+      (blocks): ModuleList(
+        (0): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (1): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (2): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (3): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (4): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (5): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (6): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (7): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (8): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (9): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (10): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (11): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (12): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (13): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (14): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (15): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (16): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (17): SwinTransformerBlock(
+          dim=384, input_resolution=(14, 14), num_heads=12, window_size=7, shift_size=3, mlp_ratio=4.0
+          (norm1): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=384, window_size=(7, 7), num_heads=12
+            (qkv): Linear(in_features=384, out_features=1152, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=384, out_features=384, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((384,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=384, out_features=1536, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=1536, out_features=384, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+      (downsample): PatchMerging(
+        input_resolution=(14, 14), dim=384
+        (reduction): Linear(in_features=1536, out_features=768, bias=False)
+        (norm): LayerNorm((1536,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (3): BasicLayer(
+      dim=768, input_resolution=(7, 7), depth=2
+      (blocks): ModuleList(
+        (0): SwinTransformerBlock(
+          dim=768, input_resolution=(7, 7), num_heads=24, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=768, window_size=(7, 7), num_heads=24
+            (qkv): Linear(in_features=768, out_features=2304, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=768, out_features=768, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+        (1): SwinTransformerBlock(
+          dim=768, input_resolution=(7, 7), num_heads=24, window_size=7, shift_size=0, mlp_ratio=4.0
+          (norm1): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (attn): WindowAttention(
+            dim=768, window_size=(7, 7), num_heads=24
+            (qkv): Linear(in_features=768, out_features=2304, bias=True)
+            (attn_drop): Dropout(p=0.0, inplace=False)
+            (proj): Linear(in_features=768, out_features=768, bias=True)
+            (proj_drop): Dropout(p=0.0, inplace=False)
+            (softmax): Softmax(dim=-1)
+          )
+          (drop_path): DropPath()
+          (norm2): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+          (mlp): Mlp(
+            (fc1): Linear(in_features=768, out_features=3072, bias=True)
+            (act): GELU()
+            (fc2): Linear(in_features=3072, out_features=768, bias=True)
+            (drop): Dropout(p=0.0, inplace=False)
+          )
+        )
+      )
+    )
+  )
+  (norm): LayerNorm((768,), eps=1e-05, elementwise_affine=True)
+  (avgpool): AdaptiveAvgPool1d(output_size=1)
+  (head): Linear(in_features=768, out_features=1000, bias=True)
+)
+[2022-05-03 01:27:39 swin_small_patch4_window7_224] (main.py 94): INFO number of params: 49606258
+[2022-05-03 01:27:39 swin_small_patch4_window7_224] (main.py 97): INFO number of GFLOPs: 8.746520064
+[2022-05-03 01:27:39 swin_small_patch4_window7_224] (main.py 121): INFO no checkpoint found in output/swin_small_patch4_window7_224/default, ignoring auto resume
+[2022-05-03 01:27:39 swin_small_patch4_window7_224] (utils.py 20): INFO ==============> Resuming form ./cache/swin_small_patch4_window7_224.pth....................
+[2022-05-03 01:27:40 swin_small_patch4_window7_224] (utils.py 27): INFO <All keys matched successfully>
+[2022-05-03 01:27:51 swin_small_patch4_window7_224] (main.py 276): INFO Test: [0/391]	Time 11.193 (11.193)	Loss 0.2894 (0.2894)	Acc@1 95.312 (95.312)	Acc@5 98.438 (98.438)	Mem 2810MB
+[2022-05-03 01:28:01 swin_small_patch4_window7_224] (main.py 276): INFO Test: [10/391]	Time 0.723 (1.903)	Loss 0.9261 (0.3863)	Acc@1 78.906 (92.116)	Acc@5 98.438 (98.722)	Mem 2909MB
+[2022-05-03 01:28:13 swin_small_patch4_window7_224] (main.py 276): INFO Test: [20/391]	Time 1.387 (1.555)	Loss 0.4184 (0.5128)	Acc@1 90.625 (88.504)	Acc@5 98.438 (98.103)	Mem 2909MB
+[2022-05-03 01:28:24 swin_small_patch4_window7_224] (main.py 276): INFO Test: [30/391]	Time 0.831 (1.398)	Loss 1.0839 (0.6271)	Acc@1 76.562 (85.433)	Acc@5 93.750 (97.480)	Mem 2909MB
+[2022-05-03 01:28:36 swin_small_patch4_window7_224] (main.py 276): INFO Test: [40/391]	Time 0.670 (1.361)	Loss 0.4649 (0.5558)	Acc@1 93.750 (87.576)	Acc@5 95.312 (97.790)	Mem 2909MB
+[2022-05-03 01:28:50 swin_small_patch4_window7_224] (main.py 276): INFO Test: [50/391]	Time 1.448 (1.373)	Loss 0.2313 (0.5553)	Acc@1 95.312 (87.852)	Acc@5 100.000 (97.718)	Mem 2909MB
+[2022-05-03 01:29:05 swin_small_patch4_window7_224] (main.py 276): INFO Test: [60/391]	Time 1.402 (1.382)	Loss 0.7014 (0.5208)	Acc@1 85.156 (88.742)	Acc@5 95.312 (97.900)	Mem 2909MB
+[2022-05-03 01:29:19 swin_small_patch4_window7_224] (main.py 276): INFO Test: [70/391]	Time 1.464 (1.389)	Loss 0.7269 (0.5485)	Acc@1 79.688 (87.940)	Acc@5 97.656 (97.810)	Mem 2909MB
+[2022-05-03 01:29:33 swin_small_patch4_window7_224] (main.py 276): INFO Test: [80/391]	Time 1.432 (1.397)	Loss 0.6097 (0.5613)	Acc@1 89.062 (87.587)	Acc@5 96.875 (97.762)	Mem 2909MB
+[2022-05-03 01:29:48 swin_small_patch4_window7_224] (main.py 276): INFO Test: [90/391]	Time 1.460 (1.402)	Loss 0.7210 (0.5636)	Acc@1 74.219 (87.620)	Acc@5 97.656 (97.691)	Mem 2909MB
+[2022-05-03 01:30:02 swin_small_patch4_window7_224] (main.py 276): INFO Test: [100/391]	Time 1.319 (1.403)	Loss 0.4543 (0.5638)	Acc@1 90.625 (87.461)	Acc@5 96.875 (97.710)	Mem 2909MB
+[2022-05-03 01:30:16 swin_small_patch4_window7_224] (main.py 276): INFO Test: [110/391]	Time 1.389 (1.406)	Loss 1.0477 (0.5742)	Acc@1 64.062 (87.148)	Acc@5 98.438 (97.691)	Mem 2909MB
+[2022-05-03 01:30:30 swin_small_patch4_window7_224] (main.py 276): INFO Test: [120/391]	Time 1.376 (1.406)	Loss 0.4629 (0.5740)	Acc@1 90.625 (87.319)	Acc@5 97.656 (97.701)	Mem 2909MB
+[2022-05-03 01:30:45 swin_small_patch4_window7_224] (main.py 276): INFO Test: [130/391]	Time 1.472 (1.410)	Loss 0.2948 (0.5668)	Acc@1 95.312 (87.530)	Acc@5 100.000 (97.716)	Mem 2909MB
+[2022-05-03 01:30:58 swin_small_patch4_window7_224] (main.py 276): INFO Test: [140/391]	Time 1.439 (1.404)	Loss 0.9379 (0.5665)	Acc@1 77.344 (87.411)	Acc@5 99.219 (97.806)	Mem 2909MB
+[2022-05-03 01:31:10 swin_small_patch4_window7_224] (main.py 276): INFO Test: [150/391]	Time 1.237 (1.389)	Loss 0.7654 (0.5757)	Acc@1 75.781 (87.241)	Acc@5 98.438 (97.744)	Mem 2909MB
+[2022-05-03 01:31:24 swin_small_patch4_window7_224] (main.py 276): INFO Test: [160/391]	Time 1.402 (1.389)	Loss 0.5895 (0.5781)	Acc@1 85.156 (87.219)	Acc@5 97.656 (97.685)	Mem 2909MB
+[2022-05-03 01:31:38 swin_small_patch4_window7_224] (main.py 276): INFO Test: [170/391]	Time 1.452 (1.389)	Loss 1.3777 (0.5952)	Acc@1 65.625 (86.719)	Acc@5 90.625 (97.556)	Mem 2909MB
+[2022-05-03 01:31:51 swin_small_patch4_window7_224] (main.py 276): INFO Test: [180/391]	Time 1.487 (1.384)	Loss 1.5459 (0.6104)	Acc@1 62.500 (86.386)	Acc@5 92.188 (97.423)	Mem 2909MB
+[2022-05-03 01:32:05 swin_small_patch4_window7_224] (main.py 276): INFO Test: [190/391]	Time 1.404 (1.386)	Loss 1.3885 (0.6322)	Acc@1 67.188 (85.790)	Acc@5 93.750 (97.235)	Mem 2909MB
+[2022-05-03 01:32:19 swin_small_patch4_window7_224] (main.py 276): INFO Test: [200/391]	Time 1.452 (1.387)	Loss 0.4895 (0.6473)	Acc@1 85.938 (85.448)	Acc@5 99.219 (97.077)	Mem 2909MB
+[2022-05-03 01:32:34 swin_small_patch4_window7_224] (main.py 276): INFO Test: [210/391]	Time 1.485 (1.390)	Loss 0.7437 (0.6595)	Acc@1 82.031 (85.071)	Acc@5 98.438 (96.993)	Mem 2909MB
+[2022-05-03 01:32:47 swin_small_patch4_window7_224] (main.py 276): INFO Test: [220/391]	Time 0.692 (1.386)	Loss 0.3074 (0.6608)	Acc@1 93.750 (85.043)	Acc@5 98.438 (96.953)	Mem 2909MB
+[2022-05-03 01:33:00 swin_small_patch4_window7_224] (main.py 276): INFO Test: [230/391]	Time 1.237 (1.382)	Loss 1.1422 (0.6670)	Acc@1 72.656 (84.940)	Acc@5 90.625 (96.878)	Mem 2909MB
+[2022-05-03 01:33:13 swin_small_patch4_window7_224] (main.py 276): INFO Test: [240/391]	Time 1.427 (1.382)	Loss 0.7320 (0.6671)	Acc@1 88.281 (85.004)	Acc@5 93.750 (96.817)	Mem 2909MB
+[2022-05-03 01:33:27 swin_small_patch4_window7_224] (main.py 276): INFO Test: [250/391]	Time 1.245 (1.381)	Loss 0.3500 (0.6815)	Acc@1 94.531 (84.515)	Acc@5 99.219 (96.732)	Mem 2909MB
+[2022-05-03 01:33:41 swin_small_patch4_window7_224] (main.py 276): INFO Test: [260/391]	Time 1.468 (1.383)	Loss 0.7028 (0.6919)	Acc@1 82.031 (84.225)	Acc@5 96.094 (96.624)	Mem 2909MB
+[2022-05-03 01:33:56 swin_small_patch4_window7_224] (main.py 276): INFO Test: [270/391]	Time 1.384 (1.385)	Loss 1.3099 (0.6988)	Acc@1 67.969 (84.052)	Acc@5 89.844 (96.532)	Mem 2909MB
+[2022-05-03 01:34:09 swin_small_patch4_window7_224] (main.py 276): INFO Test: [280/391]	Time 1.466 (1.382)	Loss 0.8287 (0.6998)	Acc@1 78.906 (84.052)	Acc@5 96.875 (96.519)	Mem 2909MB
+[2022-05-03 01:34:23 swin_small_patch4_window7_224] (main.py 276): INFO Test: [290/391]	Time 1.400 (1.383)	Loss 1.2074 (0.7044)	Acc@1 54.688 (83.911)	Acc@5 94.531 (96.448)	Mem 2909MB
+[2022-05-03 01:34:37 swin_small_patch4_window7_224] (main.py 276): INFO Test: [300/391]	Time 1.420 (1.384)	Loss 0.5478 (0.7090)	Acc@1 89.062 (83.833)	Acc@5 98.438 (96.400)	Mem 2909MB
+[2022-05-03 01:34:51 swin_small_patch4_window7_224] (main.py 276): INFO Test: [310/391]	Time 1.466 (1.386)	Loss 0.7119 (0.7108)	Acc@1 85.156 (83.795)	Acc@5 96.094 (96.373)	Mem 2909MB
+[2022-05-03 01:35:06 swin_small_patch4_window7_224] (main.py 276): INFO Test: [320/391]	Time 1.421 (1.387)	Loss 0.4823 (0.7170)	Acc@1 89.062 (83.706)	Acc@5 96.094 (96.293)	Mem 2909MB
+[2022-05-03 01:35:20 swin_small_patch4_window7_224] (main.py 276): INFO Test: [330/391]	Time 1.444 (1.388)	Loss 1.1841 (0.7266)	Acc@1 65.625 (83.429)	Acc@5 90.625 (96.219)	Mem 2909MB
+[2022-05-03 01:35:34 swin_small_patch4_window7_224] (main.py 276): INFO Test: [340/391]	Time 1.434 (1.390)	Loss 0.5568 (0.7288)	Acc@1 88.281 (83.383)	Acc@5 98.438 (96.201)	Mem 2909MB
+[2022-05-03 01:35:49 swin_small_patch4_window7_224] (main.py 276): INFO Test: [350/391]	Time 1.357 (1.391)	Loss 0.6389 (0.7298)	Acc@1 85.156 (83.327)	Acc@5 96.875 (96.205)	Mem 2909MB
+[2022-05-03 01:36:03 swin_small_patch4_window7_224] (main.py 276): INFO Test: [360/391]	Time 1.421 (1.393)	Loss 1.2336 (0.7362)	Acc@1 71.875 (83.183)	Acc@5 93.750 (96.167)	Mem 2909MB
+[2022-05-03 01:36:16 swin_small_patch4_window7_224] (main.py 276): INFO Test: [370/391]	Time 1.460 (1.389)	Loss 0.9037 (0.7330)	Acc@1 71.094 (83.238)	Acc@5 97.656 (96.205)	Mem 2909MB
+[2022-05-03 01:36:30 swin_small_patch4_window7_224] (main.py 276): INFO Test: [380/391]	Time 1.507 (1.390)	Loss 0.6999 (0.7353)	Acc@1 82.812 (83.182)	Acc@5 99.219 (96.202)	Mem 2909MB
+[2022-05-03 01:36:44 swin_small_patch4_window7_224] (main.py 276): INFO Test: [390/391]	Time 1.020 (1.391)	Loss 1.3596 (0.7338)	Acc@1 60.000 (83.188)	Acc@5 93.750 (96.226)	Mem 2909MB
+[2022-05-03 01:36:45 swin_small_patch4_window7_224] (main.py 282): INFO  * Acc@1 83.188 Acc@5 96.226
+[2022-05-03 01:36:45 swin_small_patch4_window7_224] (main.py 126): INFO Accuracy of the network on the 50000 test images: 83.2%
